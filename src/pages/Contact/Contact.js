@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { AiFillFacebook } from "react-icons/ai";
 import { FaWhatsappSquare } from "react-icons/fa";
@@ -6,6 +6,9 @@ import { BsTelephoneForwardFill } from "react-icons/bs";
 import Subscribe from "../Shared/Subscribe/Subscribe";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="max-w-[1200px] mx-auto py-10 min-h-screen">
       <div className="mx-5">

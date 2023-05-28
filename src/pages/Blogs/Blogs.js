@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BlogCard from "../Home/HomeBlog/BlogCard/BlogCard";
 import jinersomossabujhben from "../../assets/blogs/jinersomossabujhben.jpg";
 import boshikoron from "../../assets/blogs/boshikoron.jpg";
@@ -9,6 +9,9 @@ import JinAsorerSomossa from "../../assets/blogs/jinasorersomossa.jpg";
 import Subscribe from "../Shared/Subscribe/Subscribe";
 
 const Blogs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="max-w-[1200px] mx-auto py-10 min-h-screen">
       <div className="mx-5">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img1 from "../../../src/assets/question/ruqyahbd.org-FAQ__বহুল_জিজঞাসিত_পরশনের_উততর[1]_page-0001.jpg";
 import img2 from "../../../src/assets/question/ruqyahbd.org-FAQ__বহুল_জিজঞাসিত_পরশনের_উততর[1]_page-0002.jpg";
 import img3 from "../../../src/assets/question/ruqyahbd.org-FAQ__বহুল_জিজঞাসিত_পরশনের_উততর[1]_page-0003.jpg";
@@ -7,6 +7,9 @@ import img5 from "../../../src/assets/question/ruqyahbd.org-FAQ__বহুল_�
 import Subscribe from "../Shared/Subscribe/Subscribe";
 
 const Questions = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="max-w-[1200px] mx-auto py-10 min-h-screen">
       <div className="mx-5">
