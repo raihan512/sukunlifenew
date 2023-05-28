@@ -19,6 +19,7 @@ import JinerSomossaBujhben from "../../pages/Blogs/JinerSomossaBujhben/JinerSomo
 import BoshikoronProvab from "../../pages/Blogs/BoshikoronProvab/BoshikoronProvab";
 import Error from "../../pages/Error/Error";
 import Contact from "../../pages/Contact/Contact";
+import Thankyou from "../../pages/Thankyou/Thankyou";
 
 export const Routes = createBrowserRouter([
   {
@@ -30,8 +31,12 @@ export const Routes = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "contact",
+        path: "/contact",
         element: <Contact></Contact>,
+      },
+      {
+        path: "/thankyou",
+        element: <Thankyou></Thankyou>,
       },
       {
         path: "/porichiti",

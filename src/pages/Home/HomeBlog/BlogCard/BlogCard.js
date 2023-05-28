@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 const BlogCard = ({ img, title, link, desc }) => {
   return (
     <div>
-      <img src={img} className="rounded-md" alt="" />
+      <Link to={`/blogs/${link}`}>
+        <img src={img} className="rounded-md" alt="" />
+      </Link>
       <div className="py-5">
         <h5 className="font-bold text-20px md:text-[22px] lg:text-[28px] text-primary">
           {title}

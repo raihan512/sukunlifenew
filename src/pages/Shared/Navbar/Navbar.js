@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="max-w-[1200px] mx-auto py-2">
           <div className="flex justify-between items-center">
             <Link to="/">
-              <img src={logo} className="h-14" alt="" />
+              <img src={logo} className="h-8" alt="" />
             </Link>
             <ul className="hidden md:flex justify-between text-white">
               {menuItems}
