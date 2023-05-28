@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: bornomala-regular;
+  src: url(../src/assets/Fonts/Bornomala-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: bornomala-bold;
+  src: url(../src/assets/Fonts/Bornomala-Bold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: kalpurush-regular;
+  src: url(../src/assets/Fonts/kalpurush.ttf);
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  font-family: kalpurush-regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
