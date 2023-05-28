@@ -22,7 +22,7 @@ const Subscribe = () => {
           // window.prompt("আপনার মেসেজ পাঠানো হয়েছে");
           // notify("আপনার মেসেজ পাঠানো হয়েছে");
           toast.success("আপনার মেসেজ পাঠানো হয়েছে");
-          navigate("/blogs");
+          navigate("/thankyou");
         },
         (error) => {
           // console.log(error.text);
@@ -36,12 +36,12 @@ const Subscribe = () => {
     <section id="appointment">
       <div className="max-w-[1200px] mx-auto py-5 text-white">
         <div className="">
-          <h5 className="text-[22px] md:text-[28px] lg:text-[38px] font-bold mb-2 text-primary text-center">
-            অ্যাপয়েন্টমেন্ট নিন
-          </h5>
           <div>
             <div className="w-full md:w-8/12 lg:w-5/12 mx-auto bg-white rounded-md p-5">
-              <form ref={form} className="mt-10" onSubmit={sendEmail}>
+              <p className="text-[22px] md:text-[28px] lg:text-[38px] font-bold text-primary text-center">
+                অ্যাপয়েন্টমেন্ট নিন
+              </p>
+              <form ref={form} className="mt-5" onSubmit={sendEmail}>
                 <div className="mb-5">
                   <label className="text-base md:text-lg text-black font-bold">
                     আপনার নাম লিখুন
